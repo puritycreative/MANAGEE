@@ -132,7 +132,7 @@ nav {
     gap: 20px;
 }
 
-.no-1, .n0-2, .no-3 {
+.no-1, .no-2, .no-3 {
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -166,3 +166,24 @@ nav {
     color: var(--dark-Grayish-Blue);
     font-size: 12px;
 }
+
+#section-3 {
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+ #section-3 h1 {
+    font-size: 40px;
+    color: var(--very-Dark-Blue);
+ }
+.ali {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
