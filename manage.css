@@ -57,6 +57,7 @@ nav {
     padding: 5px 15px;
     border-radius: 20px;
     border: 0px;
+    color: var(--very-Pale-Red);
 }
 #section-1 {
     /* border: 2px solid black; */
@@ -174,16 +175,63 @@ nav {
     align-items: center;
     gap: 50px;
     
+    
 }
 
  #section-3 h1 {
     font-size: 40px;
     color: var(--very-Dark-Blue);
  }
-.ali {
+.sect-3-div {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    padding: 20px;
 }
+.card-helpers {
+    border: 2px solid black;
+    background-color: var(--Very-Light-Gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.card-one-img,
+.card-two-img,
+.card-three-img {
+    width: 50px;
+}
+.sect-3-div-p-helper {
+    text-align: center;
+    color: var(--dark-Grayish-Blue);
+    font-size: var(--font-size);
+}
+.sect-3-h3-helper {
+    color: var(--very-Dark-Blue);
+    font-size: 20px;
+}
+#get-started-inverse {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 0px;
+    color: var(--Bright-Red);
 
+}
+#section-4 {
+    background-color: var(--Bright-Red);
+    font-size: 40pd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/resources/bg-simplify-section-desktop.svg);
+    margin: 50px 0 0 0;
+    padding: 50px 130px 50px 130px;
+}
+#section-4 h1 {
+    color: white;
+}
