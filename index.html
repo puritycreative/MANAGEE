@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="google.com" method="post">
+        <!-- The for attribute are used to interface with an input's id -->
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter your name...">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="please enter your email">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Please enter a valid password">
+    </form>
+
+    <!-- Comprehensive form demonstrating various input types -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <!-- Text inputs for different data types -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+            
+            <label for="website">Personal Website:</label>
+            <input type="url" id="website" name="website" placeholder="https://yoursite.com">
+            
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate">
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="120">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Account Settings</legend>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+            
+            <label for="experience">Experience Level:</label>
+            <input type="range" id="experience" name="experience" min="1" max="10" value="5">
+            
+            <label for="profile-color">Favorite Color:</label>
+            <input type="color" id="profile-color" name="profile-color" value="#3498db">
+        </fieldset>
+    </form>
+
+    <!-- Advanced form controls for complex user interactions -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Project Requirements</legend>
+            
+            <!-- Radio buttons for single selection -->
+            <p>Project Type:</p>
+            <input type="radio" id="website" name="project-type" value="website" checked>
+            <label for="website">Website Development</label>
+            
+            <input type="radio" id="mobile-app" name="project-type" value="mobile-app">
+            <label for="mobile-app">Mobile Application</label>
+            
+            <input type="radio" id="consultation" name="project-type" value="consultation">
+            <label for="consultation">Consultation Only</label>
+            
+            <!-- Checkboxes for multiple selections -->
+            <p>Services Needed:</p>
+            <input type="checkbox" id="design" name="services" value="design">
+            <label for="design">UI/UX Design</label>
+            
+            <input type="checkbox" id="development" name="services" value="development">
+            <label for="development">Development</label>
+            
+            <input type="checkbox" id="maintenance" name="services" value="maintenance">
+            <label for="maintenance">Ongoing Maintenance</label>
+            
+            <!-- Dropdown selection -->
+            <label for="budget">Budget Range:</label>
+            <select id="budget" name="budget" required>
+                <option value="">Select your budget</option>
+                <option value="under-5k">Under $5,000</option>
+                <option value="5k-15k">$5,000 - $15,000</option>
+                <option value="15k-50k">$15,000 - $50,000</option>
+                <option value="over-50k">Over $50,000</option>
+            </select>
+            
+            <!-- Textarea for longer responses -->
+            <label for="project-description">Project Description:</label>
+            <textarea id="project-description" name="project-description" 
+                    rows="10" cols="100" placeholder="Describe your project in detail..."></textarea>
+            
+            <!-- File upload -->
+            <label for="documents">Supporting Documents:</label>
+            <input type="file" id="documents" name="documents" multiple accept=".pdf,.doc,.docx">
+        </fieldset>
+        
+        <button type="submit">Submit Proposal Request</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</body>
+</html>

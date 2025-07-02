@@ -49,6 +49,7 @@ nav {
     list-style-type: none;
     gap: 30px;
 }
+
 #get-started {
     background-color:var(--Bright-Red);
     padding: 5px 15px;
@@ -56,13 +57,12 @@ nav {
     border: 0px;
     color: var(--very-Pale-Red);
 }
+
 #section-1 {
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 40px 70px 100px;
-
 }
 
 .buttons {
@@ -376,6 +376,8 @@ footer {
 
     #section-1 {
         flex-direction: column-reverse;
+        margin: 20px 10px 80px;
+        width: 100%;
     }
 
     .section-1-img img {
@@ -386,7 +388,39 @@ footer {
         font-size: 10px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         text-align: center;
+        align-items: center;
     }
+
+    .section-1-text h1 {
+        font-size: 50px;
+    }
+
+    .section-1-text p {
+        font-size: 20px;
+    }
+
+    #get-started {
+        padding: 15px 35px;
+    }
+
+
+
+
+
+
+
+
+    /* This is the footer section */
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .down-copy {
+        display: none;
+    }
+
 }
